@@ -1,15 +1,15 @@
 import './App.css';
-import {Link} from "react-router-dom"
+import  {Navbar}  from "./components"
 
 function App() {
   return (
-    <div className="App">
+ <div className="App">
       <div className='App-header'>
-      <nav>
-        <Link to="/">Home</Link> | {" "}
-        <Link to="/second">#2</Link> | {" "}
-        <Link to="/third">#3</Link>
-      </nav>
+        <Navbar/>
+        <div className='heading-primary'>
+        <h1 className='header-title'>Welcome</h1>
+        <span className='header-quote'>“Raise your words, not your voice. It is rain that grows flowers, not thunder.”</span>
+        </div>
       </div>
     </div>
   );

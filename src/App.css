@@ -1,3 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'EB Garamond', serif;
+}
+
+.App-header {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #E6E3E1;
+  background-image: url("/public/images/bkgrd.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.heading-primary{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.header-title{
+font-weight: 400;
+font-size: 180px;
+letter-spacing: 10px;
+color: #e9e3db;
+margin: 0%;
+}
+
+.header-quote{
+  align-self: center;
+  font-size: 18px;
+  font-style: italic;
+  width: 50%;
+  color: #4e5757;
+}
+
+@media screen and (max-width: 960px) {
+  .header-title{
+  font-size: 60px;
+  }
 }
