@@ -8,7 +8,7 @@ function Second() {
   return (
     <>
       <Navbar />
-      <Search placeholder={"Search for a book"} data={Books.cardData} />
+      <Search placeholder={"Search for a book ..."} data={Books.cardData} />
     </>
   );
 }

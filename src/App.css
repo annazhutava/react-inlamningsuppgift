@@ -18,11 +18,10 @@
 }
 
 .heading-primary{
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
+  height: 75%;
 }
 
 .header-title{
@@ -35,7 +34,7 @@ margin: 0%;
 
 .header-quote{
   align-self: center;
-  font-size: 18px;
+  font-size: 19px;
   font-style: italic;
   width: 50%;
   color: #4e5757;

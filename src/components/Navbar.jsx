@@ -14,12 +14,7 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link to="/second" className="nav-link">
-              #2
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/third" className="nav-link">
-              #3
+              Books
             </Link>
           </li>
         </ul>
