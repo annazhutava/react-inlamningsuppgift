@@ -1,22 +1,26 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import "./BookDetails.css";
 
 const BookDetails = ({ data }) => {
   const { title } = useParams();
 
-  console.log(data);
-  console.log(title);
-
   const newFilter = data.filter((value) => value.title === title);
 
-  console.log(newFilter);
-
   return (
-    <div>
+    <div className="book-container">
       {newFilter.map((value, index) => (
-        <div key={index}>
-          <h1>{value.title}</h1>
-          <p>{value.description}</p>
+        <div className="book-card" key={value.id}>
+          <div className="book-img-container">
+            <img src={value.img} className="book-img" alt="" />
+          </div>
+          <div className="book-body">
+            <div className="book-text">
+              <h5 className="book-title">{value.title}</h5>
+              <p className="book-author">{value.author}</p>
+              <p className="book-desc">{value.description}</p>
+            </div>
+          </div>
         </div>
       ))}
     </div>

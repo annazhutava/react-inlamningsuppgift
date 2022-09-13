@@ -1,0 +1,68 @@
+.book-container{
+    display: flex;
+    justify-content: center;
+}
+
+.book-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 55rem;
+    max-height: 100%;
+    padding-top: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.book-body{
+    text-align: center;
+    margin: 0rem 4rem 0rem;
+    background-color: #dfdbd6;
+    border-radius: 20px;
+}
+
+.book-text{
+    margin: 40px;
+}
+
+.book-title {
+    font-weight: 500;
+    margin: 1rem 0rem 0rem;
+    font-size: 40px;
+    border-bottom: 1px solid black;
+    color: #60645c;
+}
+
+.book-author{
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.book-img-container{
+    margin-top: 3px;
+}
+
+.book-img{
+    height: 350px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 767px){
+    .book-card{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .book-title{
+        font-size: 30px;
+    }
+    .book-text{
+        width: 230px;
+    }
+    .book-img-container{
+        margin-bottom: 30px;
+    }
+}
