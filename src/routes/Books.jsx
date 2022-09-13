@@ -2,15 +2,15 @@ import React from "react";
 import "../App.css";
 import Navbar from "../components/Navbar";
 import Search from "../components/Search";
-import Books from "../Data";
+import data from "../data/Data.js";
 
-function Second() {
+function Books() {
   return (
     <>
       <Navbar />
-      <Search placeholder={"Search for a book ..."} data={Books.cardData} />
+      <Search placeholder={"Search for a book ..."} data={data.cardData} />
     </>
   );
 }
 
-export default Second;
+export default Books;

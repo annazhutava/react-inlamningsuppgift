@@ -1,9 +1,9 @@
-import img1 from "./img/book1.jpg";
-import img2 from "./img/book2.jpg";
-import img3 from "./img/book3.jpg";
-import img4 from "./img/book4.jpg";
-import img5 from "./img/book5.jpg";
-import img6 from "./img/book6.jpg";
+import img1 from "../img/book1.jpg";
+import img2 from "../img/book2.jpg";
+import img3 from "../img/book3.jpg";
+import img4 from "../img/book4.jpg";
+import img5 from "../img/book5.jpg";
+import img6 from "../img/book6.jpg";
 
 const data = {
   cardData: [

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../components/Search.css";
 
 function Search({ placeholder, data }) {
@@ -25,7 +26,7 @@ function Search({ placeholder, data }) {
       <div className="data-results">
         {newFilter.map((value, key) => {
           return (
-            <div className="card">
+            <div className="card" key={value.id}>
               <div className="img-container">
                 <img src={value.img} className="card-img" alt="" />
               </div>
@@ -33,8 +34,9 @@ function Search({ placeholder, data }) {
                 <div className="card-text">
                   <h5 className="card-title">{value.title}</h5>
                   <p className="card-author">{value.author}</p>
-
-                  <button className="btn">Read more</button>
+                  <Link to={`/books/${value.title}`}>
+                    <button className="btn">Read more</button>
+                  </Link>
                 </div>
               </div>
             </div>
