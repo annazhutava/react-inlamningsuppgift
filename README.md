@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# About this project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple book page that contains a limited amount of books where you can search for a book and read more information about each book.
+
+This is the home page where only a header is displayed.
+
+![](public/images/homePage.jpg)
+
+By clicking on the "Books" link in the navigation bar you will navigate to a page where a list of books will be displayed.
+
+This page contains a search bar that can be used to search for available books.
+
+![](public/images/secPage.jpg)
+
+If you wish to read more about a specific book you can click on the "Read More" button and you will be redirected to the following page.
+
+![](public/images/thirdPage.jpg)
 
 ## Available Scripts
 
